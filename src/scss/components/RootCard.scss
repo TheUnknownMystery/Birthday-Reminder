@@ -1,0 +1,17 @@
+.Root-Card {
+	background: $Background-color;
+	padding-top: 1rem;
+	padding-bottom: 3rem;
+	width: 30rem;
+	border-radius: 4px;
+	display: flex;
+	flex-direction: column;
+}
+
+.Root-Card__NotFound {
+	text-align: center;
+	margin-top: 50px;
+	font-size: 20px;
+	color: grey;
+	font-family: 'Lucida Sans';
+}
