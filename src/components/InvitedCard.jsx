@@ -1,4 +1,5 @@
 import React from 'react';
+import DeleteIcon from '@mui/icons-material/Delete';
 
 const InvitedCard = ({ first_name, last_name, age, url, handleDelete, id }) => (
   <React.Fragment key={id}>
@@ -18,7 +19,7 @@ const InvitedCard = ({ first_name, last_name, age, url, handleDelete, id }) => (
             handleDelete(`${first_name} ${last_name}`);
           }}
         >
-          Remove
+          <DeleteIcon />
         </button>
       </div>
     </div>

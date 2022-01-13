@@ -29,6 +29,7 @@
 .Card__Button {
 	background-color: $primary-color;
 	border: none;
+	display: flex;
 	border-radius: 50px;
 	padding: 10px;
 	color: $Background-color;
