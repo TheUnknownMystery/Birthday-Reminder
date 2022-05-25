@@ -37,14 +37,7 @@ function HomeScreen() {
       {users.map((user, index) => (
         <Suspense key={index} fallback={<SkeletonCard />}>
           <React.Fragment key={index}>
-            <InvitedCard
-              first_name={user.name.first}
-              last_name={user.name.last}
-              age={user.dob.age}
-              url={user.picture.large}
-              id={index}
-              handleDelete={handleDelete}
-            />
+            <InvitedCard info={[{ user, index, handleDelete }]} />
           </React.Fragment>
         </Suspense>
       ))}
